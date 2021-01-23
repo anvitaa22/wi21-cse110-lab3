@@ -69,6 +69,14 @@ body{
     font-family:MyFont;
 }
 
+li {
+  display: inline;
+}
+
+a {
+  display: block;
+}
+
 
 
 
