@@ -36,6 +36,7 @@
   h2, h3, p {
     text-align: center;
     color: rgb(238,130,238);
+    text-decoration:underline;
   }
 
   div p {
