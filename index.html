@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+    <head>
+        <title>CSE 110 Lab 2</title>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <link rel="icon" href="favicon.ico">
+    </head>
+
+    <body>
+        <header>
+            <h1>Header for my GitHub website!</h1> 
+        </header>
+        <main>
+            <h2>Heading 2</h2>
+        </main>
+
+        <section>
+            <h3>Heading 3</h3>
+        </section>
+        <aside>
+            <p>Aside element HTML.</p>
+        </aside>
+        <nav class = "langs">
+            <ol>
+                <li class = "langs"><a href="/html/">HTML</a></li>
+                <li class = "langs"><a href="/css/">CSS</a></li>
+                <li class = "langs"><a href="/js/">JavaScript</a></li>
+                <li class = "langs"><a href="/python/">Python</a></li>
+            </ol>
+        </nav>
+        <div>
+            <p>Division element.</p>
+        </div>
+        <span>Span element</span>
+        <p>First paragraph</p>
+        <hr>
+        <p>Second paragraph after hr break.
+        </p>
+        <p>My <b>favorite</b> fruits are:</p>
+        <ol>
+            <li><i>Strawberries (i)</i></li>
+            <li><strong>Bananas (strong)</strong></li>
+            <li><em>Oranges (em)</em></li>
+        </ol>
+        <p>To-do list:</p>
+        <ul>
+            <li>Attend lecture</li>
+            <li>Do Homework</li>
+            <li>Workout</li>
+        </ul>
+        <br>
+        <pre>
+            1
+                2
+                    3
+                        4
+                            567890
+        </pre>
+        <br>
+        <figure>
+            <img src = "https://images-na.ssl-images-amazon.com/images/I/51pn4A4VnML._AC_.jpg"
+            alt= "Sunset at La Jolla">
+            <figcaption>Puppies!</figcaption>
+        </figure>
+        <picture>
+            <img src = https://photographylife.com/wp-content/uploads/2020/02/Nikon-Z-24mm-f1.8-S-Image-Sample-11.jpg alt = "" width="800" height = "400">
+        </picture>
+        <br>
+        <iframe id="inlineFrameExample"
+            title="Inline Frame Example"
+            width="300"
+            height="200"
+            src="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio">
+        </iframe>
+        <br>
+        <code>
+            Code:
+            System.out.println("Hello World!")
+        </code>
+        <figure>
+            <figcaption>Click to listen to the dinosaur:</figcaption>
+            <audio
+                controls
+                src="t-rex-roar.mp3">
+                    Your browser does not support the
+                    <code>audio</code> element.
+            </audio>
+        </figure>
+        <video controls width="300">
+            <source src="flower.webm"
+                    type="video/webm">
+        </video>
+        <svg viewBox="0 0 10 10" x="300" width="200">
+            <circle cx="5" cy="5" r="4" />
+        </svg>
+        <canvas width="200" height="200">
+            <script>
+                const canvas = document.querySelector('canvas');
+                const ctx = canvas.getContext('2d');
+                ctx.fillStyle = 'red';
+                ctx.fillRect(20, 20, 100, 100);
+            </script>
+        </canvas>
+        <form method="get" class="form-example">
+            <fieldset>
+                <legend>Choose your favorite season</legend>
+            
+                <input type="radio" id="fall" name="season">
+                <label for="fall">Fall</label><br/>
+            
+                <input type="radio" id="winter" name="season">
+                <label for="winter">Winter</label><br/>
+            
+                <input type="radio" id="spring" name="season">
+                <label for="spring">Spring</label>
+
+                <input type="radio" id="summer" name="season">
+                <label for="summer">Summer</label>
+              </fieldset>
+
+            <label for="color-select">Choose a color:</label>
+            <select id="color-select">
+                <optgroup label="Warm Colors">
+                    <option>Red</option>
+                    <option>Orange</option>
+                    <option>Yellow</option>
+                </optgroup>
+                <optgroup label="Cool Colors">
+                    <option>Blue</option>
+                    <option>Black</option>
+                    <option>Purple</option>
+                </optgroup>
+            </select>
+            <div>
+                <label>Enter Profile Details:</label>
+
+            </div>           
+            <div>
+                <label for="name">Name(5 to 10 characters):</label>
+                <input type="text" id="name" name="name" required minlength="5" maxlength="10" size="10">
+            </div>
+            <div>
+                <label for="DOB">Date of Birth:</label>
+                <input type="date" id="DOB" name="DOB" size="10">
+            </div>
+            </div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" size="10">
+            </div>
+            </div>
+                <label for="number">Enter age:</label>
+                <input type="number" id="number" name="number">
+            </div>
+
+            <div>
+                <label for="telno">Enter phone number:</label>
+                <input type="tel" id="telno" name="telno" size="10">
+            </div>
+            <div>
+                <label for="picture">Choose a profile picture:</label>
+                <input type="file"
+                    id="picture" name="picture"
+                    accept="image/png, image/jpeg">
+            </div>
+            </div>
+                <label for="password">Enter password:</label>
+                <input type="password" id="password" name="password" size="10">
+            </div>
+            <p>Choose your classes:</p>
+            <div>
+                <input type="checkbox" id="cse110" name="cse110" checked>
+                <label for="cse110">CSE110</label>
+            </div>
+            <div>
+                <input type="checkbox" id="cse101" name="cse101">
+                <label for="cse101">CSE101</label>
+            </div>
+            <div>
+                <label for="appt">Schedule a meeting:</label>
+
+                <input type="time" id="appt" name="appt"
+                        min="09:00" max="18:00" required>    
+            </div>
+            <div>
+                <label for="url">Enter a URL:</label>
+
+                <input type="url" name="url" id="url"
+                    placeholder="https://example.com"
+                    pattern="https://.*" size="30"
+                    required>
+            </div>
+            <div>
+                <input type="submit" value="Send Request">
+            </div>
+            <div>
+                <label for="color-choice">Choose a color:</label>
+                <input list="color-choices" id="color-choice" name="color-choice" />
+
+                <datalist id="color-choices">
+                    <option value="Red">
+                    <option value="Blue">
+                    <option value="Green">
+                    <option value="Pink">
+                    <option value="Purple">
+                </datalist>
+            </div>
+            <div>
+                <label for="story">Tell us your story:</label>
+
+                <textarea id="story" name="story"
+                        rows="5" cols="33">
+                It was a cold night...
+                </textarea>
+            </div>
+
+            <div>
+                <button>CLick me </button>
+            </div>
+        </form>
+        <table>
+            <colgroup>
+                <col>
+                <col span="5" class="column">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th scope="col">Monday</th>
+                    <th scope="col">Tuesday</th>
+                    <th scope="col">Wednesday</th>
+                    <th scope="col">Thursday</th>
+                    <th scope="col">Friday!!</th>
+                    <tr>
+                        <td>Lecture: CSE110</td>
+                        <td>Lecture:CSE101</td>
+                        <td>Lecture:CSE 151A</td>
+                    </tr>
+                    <tr>
+                        <td>Lecture: CSE 101</th>
+                        <td>OH CSE101</td>
+                        <td>Discussion CSE151A</td>
+                    </tr>
+                    <tr>
+                        <td>Lecture CSE151A</th>
+                        <td>Lecture CSE110</td>
+                        <td>OH CSE 110</td>
+                    </tr>
+                </tr>
+            </tbody>
+            <caption>Weekly calednar</caption>
+        </table>
+        <template id="productrow">
+            <tr>
+              <td class="record"></td>
+              <td></td>
+            </tr>
+        </template>
+        <details>
+            <summary>Grading Ruric</summary>
+            Individual: 50%, Group:50%
+        </details> 
+        <footer>Author: Anvitaa Sekhsaria, Computer Science</footer>
+    </body>
+</html>
